@@ -1,0 +1,16 @@
+body{
+    background-color: #C4C6B9;
+    font-family: sans-serif;
+}
+h1{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #161669;
+    letter-spacing: 50px;
+    font-weight: 900;
+}
+
+p{
+    font-size:1.5em;
+}

@@ -1,10 +1,76 @@
+@font-face {
+    font-family: "Gabriela";
+    src: url("gabriela.woff");
+ }
+
+ @font-face {
+    font-family: "cabin-sketch";
+    src: url("cabin-sketch.woff");
+ }
+
 body{
     background-color: #C7C8D1;
     color: #575A75;
+    font-family: sans-serif;
 }
 h1{
     text-transform: uppercase;
     text-align: center;
+    font-family: "cabin-sketch";
     font-size: 4em;
     margin: 0%;
+    margin-bottom: 2%;
+}
+
+h2{
+    color: white;
+    font-size: 2rem;
+    margin: 0%;
+    font-family: "Gabriela";
+}
+article{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+div {
+    padding: 2px 10px;
+  }
+  
+div p {
+    margin: 2px;
+    color: black;
+}
+
+article.luis div.muerte{
+    
+    background-color:#DB5B00;
+}
+
+.luis h2{
+    background-color: #CC5500;
+    border-top-right-radius: 16px;
+}
+.luis{
+    border: hsl(20, 100%, 40%) 3px solid;
+    background-color:#FFA666;
+    margin-bottom: 1%;
+    border-radius: 0 20px 20px 20px;
+}
+.ana h2{
+    background-color:#E600E6;
+    border-top-left-radius: 16px;
+    
+}
+.biografia{
+    margin-left: 0.3%;
+}
+.ana{
+    border: hsl(300, 100%, 45%) 3px solid;
+    background-color: #FFCCFF;
+    margin-bottom: 1%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+article.ana div.muerte{
+    background-color: #FF80FF;
 }

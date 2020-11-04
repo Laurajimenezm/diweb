@@ -1,0 +1,112 @@
+@font-face{
+    font-family: 'monoton';
+    src: url("../fonts/monoton.woff2")
+}
+
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+body{
+    background-image: url("../img/matrix.png");
+    background-repeat: repeat;
+    margin-top: 0%;
+}
+.padre{
+    background-color: black;
+    width: 80%;
+    height: 1200px;
+    margin: auto;
+    margin-top: 0%;
+    
+}
+h1{
+    font-family: 'monoton';
+    text-transform: uppercase;
+    text-align: center;
+    color:#04C20D ;
+    letter-spacing: 0.8em;
+    padding: 1%;
+    
+}
+.h1div{
+    width:85%;
+    margin-top: 0%;
+    margin: auto;
+    border-bottom:3px solid #04C20D ;
+}
+
+.cuadro{
+    width: 90%;
+    margin:auto;
+    margin-top: 2%;
+    
+}
+
+h2{
+    color: white;
+    background-color: #04C20D;
+    border-bottom:1px solid white;
+    clear: both;
+}
+
+h2::first-letter{
+    font-size: 2rem;
+}
+
+p{
+    color: white;
+    margin-top: 2%;
+    
+}
+.amarillo{
+    color: yellow;
+}
+.textopong{
+    width: 70%;
+    float: left;
+    margin-bottom: 4%;
+}
+.pongimg{
+
+    float: left;
+    margin-top: 2%;
+    border: 2px solid #04C20D;
+    
+}
+.segundaFoto{
+    float: left;
+    border: 2px solid #04C20D;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.texto2{
+    margin-top: 2%;
+    width: 70%;
+    float: right;
+}
+.texto3{
+    width: 75%;
+    float: left;
+    margin-top: 1%;
+    margin-bottom: 5%;
+
+}
+.terceraFoto{
+    margin-top: 1%;
+    float: left;
+    border: 2px solid #04C20D;
+}
+.info{
+    width: 90%;
+    margin: auto;
+    clear: both;
+    border-top: 2px solid #04C20D;
+}
+address{
+   
+    color: white;
+    
+}

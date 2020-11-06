@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('html5css3.woff');
+ 
+}
+
+@font-face {
+  font-family: "Black Ops One";
+  src: url("black-ops-one.woff");
+}
+
+body{
+  font-family: "Black Ops One";
+  font-size: 300%;
+}
+p{
+  text-align: center;
+ 
+}
+div{
+  border-bottom:1px solid blue;
+  clear: both;
+}
+i{
+  font-size:3em;
+}
+i.izquierda{
+float: left;
+margin-left: 10%;
+}
+i.derecha{
+  float: right;
+  margin-right: 10%;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-happy:before {
+  content: "\e600";
+}
+.icon-tux:before {
+  content: "\e601";
+}
+.icon-apple:before {
+  content: "\e602";
+}
+.icon-android:before {
+  content: "\e603";
+}
+.icon-windows8:before {
+  content: "\e604";
+}
+.icon-html5:before {
+  content: "\e605";
+  color: red;
+}
+.icon-css3:before {
+  content: "\e606";
+  color: red;
+}
+.icon-chrome:before {
+  content: "\e607";
+}
+.icon-firefox:before {
+  content: "\e608";
+}
+.icon-IE:before {
+  content: "\e609";
+}

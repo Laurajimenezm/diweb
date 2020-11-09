@@ -1,0 +1,66 @@
+body{
+
+    background-color: #D3D3D3;
+    font-family: Arial;
+
+}
+
+h1{
+
+    text-align: center;
+    font-size: 4em;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    
+}
+
+nav ul li{
+
+    list-style: none;
+    float: left;
+    width: 33%;
+    height: 5em;
+   
+}
+
+li a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+
+a[rel='next']::before{
+    content: url('icons8-star-24.png');
+    
+}
+
+a[rel='bookmark']::before{
+    content: url('icons8-star-24.png');
+    
+}
+   
+a[rel='tag']::before{
+    content: url('icons8-favorite-cart-24.png');
+    
+}
+
+a[rel='help']::before{
+    content: url('icons8-pdf-24.png');
+    
+}
+
+a[rel='search']::before{
+    content: url('icons8-search-bar-24.png');
+    
+}
+
+a[rel='nofollow']::before{
+    content: url('icons8-protect-24.png');
+    
+}
+
+
+
+
+

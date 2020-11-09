@@ -1,0 +1,133 @@
+@font-face{
+    font-family: 'fredoka-one';
+    src: url(fredoka-one.woff)
+}
+
+
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+body{
+    background-image: url("cuadros.png");
+    background-repeat: repeat;
+    margin-top: 0%;
+}
+
+.cajaPadre{
+    background-color: #34B2A4;
+    width: 90%;
+    height: 2000px;
+    margin-top: 0%;
+    margin-left: 5%;
+}
+
+h1{
+    font-family: 'fredoka-one';
+    text-transform: uppercase;
+    text-align: center;
+    color:#005E54;
+    text-shadow: 2px 0px 0.5px white
+}
+h1::first-letter
+{
+    font-size: 1.8em;
+}
+.tituloh1{
+    border-bottom: 2px solid #005E54;
+    width: 90%;
+    margin: auto;
+}
+p{
+    font-family: sans-serif;
+    font-size: 1.15em;
+    
+}
+h2{
+    font-family: 'fredoka-one';
+    color:#005E54;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+}
+.historia{
+    width: 90%;
+    border-bottom: 2px solid #005E54;
+    margin: auto;
+}
+
+.texto{
+ width: 77%;
+ float: left;
+ margin-right: 0.2%;
+ 
+}
+
+.tablero1{
+    border: 5px solid black;
+    padding: 1%;
+    margin-top: 1%;
+
+}
+.maquinas{
+    width: 90%;
+    border-bottom: 2px solid #005E54;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.maquinas p{
+    margin-bottom: 1.2%;
+}
+
+.cajaCuadros{
+    width: 90%;
+    margin: auto;
+
+}
+.cuadro{
+    border: 6px solid white;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    width: 20%;
+    height: 190px;
+    float: left;
+    padding: 1%;
+    display: block;
+    border-top-right-radius: 1em 3em;
+    border-bottom-right-radius: 1em 3em;
+}
+
+strong{
+    font-size: 1.3em;
+    margin-left: 40%;
+
+
+}
+.grafica{
+    
+    margin-left: 6%;
+    float: left;
+}
+.graficaimg{
+    margin-top: 1%;
+    margin-left: 25%;
+    padding: 1%;
+    margin-bottom: 2%;
+    border: 2px solid black;
+}
+
+.info{
+
+    clear: both;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+
+hr{
+    clear: both;
+    width: 60%;
+    border-top: 4px solid black;
+    margin-left: 20%;
+}

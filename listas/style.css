@@ -1,0 +1,140 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-p8na1r');
+	src:url('fonts/icomoon.eot?#iefix-p8na1r') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-p8na1r') format('woff'),
+		url('fonts/icomoon.ttf?-p8na1r') format('truetype'),
+		url('fonts/icomoon.svg?-p8na1r#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	background-color: #D3D3D3;
+	font-family: sans-serif;
+}
+h1{
+	margin-bottom: 3%;
+}
+h3{
+	clear: both;
+	font-size: 1.5em;
+}
+
+ul{
+	list-style: none;
+}
+.lista1{
+	text-align: center;
+	margin-left: 0%;
+	
+}
+
+.lista1 li{
+	border: 5px dashed purple;
+	background-color:#5ACE77;
+	float: left;
+	width: 11%;
+	margin-left:1%;
+	padding: 0.5%;
+	color: purple;
+	font-family: sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+.lista2{
+	margin-left: 30%;
+}
+.lista2 li{
+	float: left;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: white;
+	padding: 0.4%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-left: 1.3%;
+	margin-bottom: 2%;
+
+}
+
+.lista3{
+	width: 10%;
+	border: 1px solid black;
+	padding: 1%;
+	text-align: center;
+	clear: both;
+}
+
+.lista3 li{
+
+	background-color: white;
+	border: 1px solid black;
+	padding: 5%;
+	margin-right: 5%;
+	margin-top: 1%;
+	margin-bottom: 5%;
+	width: 90%;
+
+}
+
+.lista4 {
+	margin-left: 20%;
+}
+
+.lista4 li{
+	text-align: center;
+	
+	width: 13%;
+	float: left;
+	margin-right: 1%;
+	padding: 0.6%;
+	font-weight: bold;
+
+}
+.blanco{
+	background-color: white;
+	color: blue;
+}
+.azul{
+	color: white;
+	background-color:blue;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e900";
+}
+.icon-pencil:before {
+	content: "\e905";
+}
+.icon-file-text:before {
+	content: "\e922";
+}
+.icon-search:before {
+	content: "\e986";
+}
+.icon-switch:before {
+	content: "\e9b6";
+}
+.icon-plus:before {
+	content: "\ea0a";
+}
+.icon-minus:before {
+	content: "\ea0b";
+}

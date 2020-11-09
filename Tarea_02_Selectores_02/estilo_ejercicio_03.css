@@ -1,0 +1,32 @@
+
+body{
+    font-family: sans-serif;
+}
+
+h2:nth-child(0n+2) {
+    color:red;
+}
+
+h2:nth-child(0n+5)::first-letter{
+    color: red;
+}
+
+li{
+    list-style: none;
+}
+
+li:nth-child(0n+3)
+{
+    color: lawngreen;
+    font-family: monospace;
+}
+
+li:nth-child(odd):hover::after{
+
+    content:"Soy un número impar";
+}
+
+li:nth-child(even):hover::before{
+
+    content:"Soy un número par";
+}

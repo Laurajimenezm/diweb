@@ -1,0 +1,15 @@
+body{
+
+    background-color: #54B7EA;
+
+}
+
+.container{
+    background-color:#FFFFFF;
+    width: 35%;
+    margin-top: 10%;
+    margin-left: 25%;
+    padding: 5%;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}

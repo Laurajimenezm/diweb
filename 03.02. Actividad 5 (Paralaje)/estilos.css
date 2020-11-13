@@ -1,0 +1,31 @@
+
+    .parallax {
+    /* The image used */
+    background-image: url("fotoentrada.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect 
+    Con background-attachment: dejamos la imagen fija mientras que los parrafos no son fijos
+    esto hace que a los parrafos si le afecte el scroll mientras que a la foto no. Por eso se produce
+    el efecto de que se cubre la imagen con el texto;*/
+    background-attachment: fixed;
+    /*centramos el fondo que es la imagen*/
+    background-position: center;
+    background-repeat: no-repeat;
+    /* redimensiona la imagen para aseugrar que ocupa el máximo de pantalla posible.*/
+    background-size: cover;
+    }
+
+    /*Esta es una manera sencilla de hacerlo, pero podemos utilizar otros métodos:
+
+    
+    *Utilizando la funcion before y aplicando al background una imagen de fondo con 
+    posicionamiento absolute y un z-index (en funcion del número que le demos se posicionara 
+    a mas o menos profundidad).
+     
+    * Tambien debemos de aplicar un overflow: hidden a todo el html y una altura de 100vp
+    al body para que funcione el paralax.
+    
+    */

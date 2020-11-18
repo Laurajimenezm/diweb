@@ -1,0 +1,57 @@
+//color de fondo
+$color-background: #666;
+
+//color de texto
+$color-texto: #eee;
+
+//color de texto al pasar sobre el
+$color-texto-sobre-el:#fff;
+
+//fondo sobre raton
+$color-fondo-raton-lista: #888;
+
+//Para establecer el color del texto y el color del fondo.
+@mixin colorTextoFondo() {
+    
+    background-color: $color-background;
+    color: $color-texto;
+
+}
+
+//Para establecer el color del texto y el color del fondo, pero en este caso
+// para cuando pasamos con el ratón sobre él.
+@mixin colorTextoFondoRaton() {
+    
+    background-color:$color-fondo-raton-lista;
+    color: $color-texto-sobre-el;
+
+}
+
+//Para el box-sizing independientemente del tipo de navegador, el valor que tomará el box-sizing será un 
+//parámetro que le pasaremos cuando lo invoquemos.
+
+@mixin box-sizing($parametro) {
+    
+    box-sizing: $parametro;
+    -moz-box-sizing: $parametro;
+    -webkit-box-sizing: $parametro;
+
+}
+
+//Para las transiciones independientemente del navegador, a este mixin
+// le enviaremos los argumentos de: property, duration y timing. Este último tendrá el valor por defecto linear.
+
+@mixin transition($property,$duration,$timing) {
+    
+    transform-style: $property;
+    transition-duration: $duration;
+    timing-function: linear;
+}
+
+@mixin animation($name,$duration,$timing) {
+    
+    transform-style: $property;
+    transition-duration: $duration;
+    timing-function: linear;
+
+}

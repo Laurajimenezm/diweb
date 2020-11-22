@@ -42,16 +42,39 @@ $color-fondo-raton-lista: #888;
 // le enviaremos los argumentos de: property, duration y timing. Este último tendrá el valor por defecto linear.
 
 @mixin transition($property,$duration,$timing) {
-    
-    transform-style: $property;
-    transition-duration: $duration;
-    timing-function: linear;
+    -moz-box-sizing:($property,$duration,$timing) ;
+    -webkit-box-sizing:($property,$duration,$timing);
+    transition:($property,$duration,$timing);
 }
 
 @mixin animation($name,$duration,$timing) {
     
-    transform-style: $property;
-    transition-duration: $duration;
-    timing-function: linear;
+    -moz-box-sizing:($name $duration $timing) ;
+    -webkit-box-sizing:($name $duration $timing);
+    animation:($name $duration $timing);
+}
 
+@import "_menu";
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 12px 30px;
+    font-size: 1.8em;
+    @include colorTextoFondo();
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    @include colorTextoFondo();
+    @include box-sizing(border-box);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
 }

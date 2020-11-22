@@ -1,0 +1,103 @@
+nav {
+  position: absolute;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 32px;
+  background-color: #666;
+  color: #eee;
+}
+
+nav nav > ul {
+  width: 100%;
+  height: 32px;
+  background-color: #666;
+  color: #eee;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  height: 32px;
+  background-color: #666;
+  color: #eee;
+}
+
+nav ul li.categoria {
+  float: left;
+  height: 100px;
+}
+
+nav ul li.categoria:hover {
+  height: 100px;
+}
+
+nav ul li.categoria li.categoria > a {
+  -moz-box-sizing: height, 0.4, ease-out;
+  -webkit-box-sizing: height, 0.4, ease-out;
+  transition: height, 0.4, ease-out;
+}
+
+nav ul li.categoria li.categoria > a:hover {
+  padding: 10px 20px;
+}
+
+nav ul li.categoria ul {
+  -moz-box-sizing: height, 0.5, ease-out;
+  -webkit-box-sizing: height, 0.5, ease-out;
+  transition: height, 0.5, ease-out;
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+}
+
+nav ul li.categoria a {
+  background-color: #666;
+  color: #eee;
+  -moz-box-sizing: padding, 0.4s, ease-out;
+  -webkit-box-sizing: padding, 0.4s, ease-out;
+  transition: padding, 0.4s, ease-out;
+  text-decoration: none;
+  width: 160px;
+  padding: 7px 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+nav ul li.categoria a:hover {
+  background-color: #888;
+  color: #fff;
+  -moz-box-sizing: iluminar 0.4s linear;
+  -webkit-box-sizing: iluminar 0.4s linear;
+  animation: iluminar 0.4s linear;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  padding: 12px 30px;
+  font-size: 1.8em;
+  background-color: #666;
+  color: #eee;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+  background-color: #666;
+  color: #eee;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}
+/*# sourceMappingURL=screen.css.map */

@@ -54,68 +54,28 @@ nav a:hover {
     color:white;
 }
 
-/*Section*/
+.escaparate{
 
-section.categorias{
-    margin-top:4% ;
     float: left;
-    margin-left: 5%;
-    width: 90%;
-    
-}
-
-.categorias h1{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.categoria{
-    float: left;
-    width: 33.3%;
-}
-.categoria img{
-    width: 90%;
-    height: 250px;
-}
-.text
-{
     width: 50%;
-    background-color:black;
-    position: relative;
-    color: white;
-    bottom: 160px;
-    text-align: center;
-    font-weight: bold;
-    transition:  border 2s linear;
+    background-color: coral;
 }
 
-.text:hover{
-    border: 5px solid black;
-}
-
-.ubicacion{
+.producto{
     float: left;
-    width: 100%;
-    background-color:#9FDBD5;
-    color:white;
-    margin-top: 5%;
+    width: 50%;
 }
 
-iframe{
+.producto img{
+    width: 90%;
+    height: 350px;
+}
+
+.deportes{
     float: left;
-    margin-left: 5%;
+    background-color: beige;
 }
 
-.contacto{
-    float: left;
-    width: 40%;
-    margin-top: 6%;
-    margin-left: 6%;
-}
-
-.contacto h2{
-    text-align: center;
-}
 
 footer{
     width: 100%;
@@ -155,4 +115,3 @@ footer{
     line-height: 200%;
 }
   
-

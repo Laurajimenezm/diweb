@@ -58,21 +58,21 @@ body
 #container
 {
     float: left;
-    width: 1000px;
+    width: 100%;
     background: #bbb;
 }
 
 #nav
 {
     float: left;
-    width: 200px;
+    width: 20%;
     background: lime;
 }
 
 #content
 {
     float: left;
-    width: 550px;
+    width: 60%;
     margin: 0 0 0 25px;
     background: yellow;
 }
@@ -92,23 +92,6 @@ body
     
 }
 
-@media  (max-width: 1000px) and (min-width: 481px) {
-
-    #nav{
-        width: 20%;
-    }
-
-    #content{
-        width: 75%;
-        
-    }
-    #extras{
-        width: 75%;
-        margin:0%;
-        padding:0%;
-        margin-right: 2.5%;
-    }
-}
 
 @media (max-width: 480px) {
 
@@ -127,6 +110,9 @@ body
         float: left;
         
     }
+    img{
+        display: none;
+    }
     #extras{
         width: 100%;
         margin-top:1%;
@@ -134,5 +120,27 @@ body
         box-sizing: 0%;
         margin-bottom:1% ; 
         float: left;
+    }
+}
+
+
+@media  (max-width: 1000px) and (min-width: 481px) {
+
+    #nav{
+        width: 20%;
+    }
+
+    #content{
+        width: 75%;
+        
+    }
+    img{
+        display: none;
+    }
+    #extras{
+        width: 75%;
+        margin:0%;
+        padding:0%;
+        margin-right: 1%;
     }
 }

@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Pequeños reseteos */
+h1,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0.5em;
+}
+body {
+  background-color: white;
+}
+
+/* Para cambir el color de leta de ciertos elementos */
+.verde {
+  color: #0c9b3b;
+}
+
+/* Contenedor general*/
+.container {
+  font-family: "Righteous", cursive;
+  margin: 20px auto;
+  width: 90%;
+}
+
+/* Parte del logo y menú */
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  display: none;
+}
+
+.menu_item {
+  padding: 0.1em;
+  /*display: none;*/
+  font-size: 0.75em;
+}
+
+/*Estilos parte principal*/
+main {
+  background-color: #666666;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section {
+  width: 100%;
+}
+
+section.main_text {
+  color: white;
+  font-weight: bolder;
+  padding: 0.5em;
+}
+
+section.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.images img {
+  height: 100px;
+  width: 25%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Para el caso de pantalla superior a 576px */
+
+@media  (max-width: 991px) and (min-width:  576px) {
+  .container{
+    width: 90%;
+  }
+  .icon {
+    float: left;
+    display: inline;
+  }
+  nav{
+    width: 30%;
+    float:right;
+  }
+  .menu_item{
+    float: left;
+    margin-left:2% ;
+  }
+  main{
+    width: 100%;
+  }
+  main section {
+    width: 50%;
+  }
+  section.main_tex{
+   
+    float:right;
+  }
+
+  section.images img {
+    width: 33.33%;
+    height: 150px;
+    float: left;
+  }
+  .hidden{
+    display: inline;
+  }
+  h2{
+    width: 25%;
+    float: left;
+  }
+  article{
+    width: 25%;
+    float: left;
+  }
+  section.novedades{
+
+    width: 100%;
+
+  }
+
+}
+
+/* Para el caso de pantalla superior a 992px */
+@media  (min-width: 992px){
+
+  .container{
+    width: 90%;
+  }
+  .icon {
+    float: left;
+    display: inline;
+  }
+  nav{
+    width: 30%;
+    float:right;
+    font-size: 2em;
+  }
+  .menu_item{
+    float: left;
+    margin-left:2% ;
+  }
+  main{
+    width: 100%;
+  }
+  main section {
+    width: 50%;
+  }
+  section.main_tex{
+   
+    float:right;
+  }
+
+  section.images img {
+    width: 33.33%;
+    height: 100px;
+    clear: both;
+  }
+  .hidden{
+    display: inline;
+  }
+  h2{
+    width: 25%;
+    float: left;
+  }
+  article{
+    width: 25%;
+    float: left;
+  }
+  section.novedades{
+
+    width: 100%;
+
+  }
+
+}
+
+
+
+
+
+

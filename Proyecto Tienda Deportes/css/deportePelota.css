@@ -54,6 +54,78 @@ nav a:hover {
     color:white;
 }
 
+.escaparate{
+
+    float: left;
+    margin-top:2%;
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+}
+
+
+h3{
+    text-align: center;
+    transition: background-color 2s linear;
+}
+
+h3:hover{
+    background-color:#F0E8B7;
+}
+
+.producto{
+    float: left;
+    margin-left: 3%;
+    width: 30%;
+    margin-top:3%;
+    border: 2px solid rgb(253, 252, 252);
+    transition:  border 2s linear;
+}
+
+.producto:hover{
+    border: 2px solid rgb(107, 104, 104);
+    border-radius: 2%;
+    
+}
+
+.producto img{
+    display:block;
+    margin:auto;
+    width: 50%;
+    height: 150px;
+}
+
+
+.deportes{
+    float: left;
+    background-color:#d3f3f0;
+    margin-top:2%;
+    margin-left: 5%;
+    width: 45%;
+    float: left;
+}
+
+.deportes img{
+    width: 59%;
+    float: left;
+    margin:1%
+}
+.caja{
+    width: 60%;
+    
+}
+.caja img{
+    width: 31%;
+    
+}
+
+.cajados{
+    width: 40%;
+    float: left;
+}
+
 footer{
     width: 100%;
     float: left;

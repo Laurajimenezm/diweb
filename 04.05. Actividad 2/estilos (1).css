@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  color: #666666;
+  font-family: "Montserrat";
+  margin: 20px auto;
+  width: 90%;
+  height: 600px;
+
+  display: grid;
+  grid-template-areas: "head head"
+                       "content_wrapper content_wrapper"
+                       "articles articles"
+                       "footer footer";
+ 
+}
+
+header{
+  grid-area: head; 
+  justify-items:center;
+  background-color: rgb(114, 88, 88);
+}
+.content_wrapper{
+
+  grid-area: content_wrapper;
+  background-color: rgb(171, 156, 187);
+  display: grid;
+  grid-template-areas: "nav main article";
+  
+}
+nav{
+  grid-area: nav;
+}
+main{
+  grid-area: main;
+}
+main img{
+  width: 30%;
+}
+
+article{
+  grid-area: article;
+}
+
+article img{
+ width: 40%;
+}
+
+.articles{
+
+  grid-area: articles;
+
+  background-color: rgb(114, 88, 88);
+  grid-template-areas: "uno dos tres";
+  
+}
+.articles .uno{
+  grid-area: uno;
+}
+.articles .dos{
+  grid-area: dos;
+}
+.articles .tres{
+  grid-area: tres;
+}
+
+.articles img{
+  width: 20%;
+}
+
+footer{
+  background-color: rgb(171, 156, 187);
+  grid-area: footer;
+  grid-template-columns: repeat(3, 33%) ;
+  grid-template-rows: repeat(1, 50px);
+
+}
+

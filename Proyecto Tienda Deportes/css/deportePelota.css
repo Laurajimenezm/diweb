@@ -1,20 +1,34 @@
+
 * {
     box-sizing: border-box;
+}
+
+*, html {
+    margin:0;
+    padding:0;  
 }
   
   /* Style the body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     background-color:white;
 }
 header {
     overflow: hidden;
-    padding: 20px 10px;
+    font-family: 'PT Sans', sans-serif;
     width: 100%;
     float: left;
-    background-color: #f0e8b7;
+    
 }
+.infoBasica{
+    width: 100%;
+    background-color: #f0e8b7;
+    height: 25px;
+    text-align: center;
+    
+}
+
   
 header a {
     float: left;
@@ -32,10 +46,9 @@ header img {
 
 nav {
     float: left;
-    margin-top: 2.7em;
-    margin-left: 6em;
-    border-radius: 10px;
-    background-color: black;
+    margin-top: 3.3em;
+    border-bottom:2px solid black;
+    
 }
 
 nav li{
@@ -45,42 +58,46 @@ nav li{
 }
 nav a{
     font-size: 1.5em;
-    color:white;
+    color:black;
     margin-bottom: 5%;
     
 }
 nav a:hover {
-    background-color: #ddd;
-    color:white;
+    background-color: rgb(194, 202, 151);
+    color:black;
 }
 
 .escaparate{
 
     float: left;
     margin-top:2%;
-    width: 50%;
+    width: 100%;
 }
 
 h1{
     text-align: center;
+    color:#32726c;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-h3{
+.producto h3{
     text-align: center;
     transition: background-color 2s linear;
+    background-color: #f0e8b7;
 }
 
-h3:hover{
-    background-color:#F0E8B7;
+.producto h3:hover{
+    background-color: #32726c;
 }
 
 .producto{
     float: left;
     margin-left: 3%;
-    width: 30%;
-    margin-top:3%;
-    border: 2px solid rgb(253, 252, 252);
+    padding: 1%;
+    width: 20%;
+    margin-top:4%;
+    border: 2px solid white;
     transition:  border 2s linear;
 }
 
@@ -93,43 +110,66 @@ h3:hover{
 .producto img{
     display:block;
     margin:auto;
-    width: 50%;
-    height: 150px;
+    width: 25%;
+    height: 90px;
 }
 
 
 .deportes{
     float: left;
-    background-color:#d3f3f0;
+    background-color:#eeeaeb;
     margin-top:2%;
-    margin-left: 5%;
-    width: 45%;
+    width: 100%;
     float: left;
 }
 
-.deportes img{
-    width: 59%;
+article{
     float: left;
-    margin:1%
-}
-.caja{
-    width: 60%;
-    
-}
-.caja img{
-    width: 31%;
-    
+    width: 50%;
+    margin-top: 2%;
 }
 
-.cajados{
+article img{
     width: 40%;
     float: left;
+    margin-left: 2%;
+    border-radius: 4%;
+   
 }
+
+article h2{
+    text-align: center;
+    margin-bottom: 2%;
+    color:#32726c;
+    font-family: 'Poppins', sans-serif;
+}
+article h3{
+   clear: both;
+   margin-top:2%;
+   color:#32726c;
+   font-family: 'Poppins', sans-serif;
+}
+
+article p{
+    width: 50%;
+    margin-left:1%;
+    float: left;
+    text-align: justify;
+}
+
+iframe{
+    margin-top:2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    width: 90%;
+}
+
 
 footer{
     width: 100%;
     float: left;
     margin-top:15%;
+    font-family: 'PT Sans', sans-serif;
     background-color: rgba(39, 36, 36, 0.651);
     
 }

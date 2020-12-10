@@ -1,0 +1,40 @@
+footer{
+    width: 100%;
+    float: left;
+    margin-top:15%;
+    font-family: 'PT Sans', sans-serif;
+    background-color: $colorpie;
+
+    div.footer{
+        width: 31%;
+        float: left;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        margin-left: 2%;
+
+        a.media{
+            width: 100%;
+            display: block;
+            margin-top: 4%;
+            margin-left: 6%;
+
+            img{
+                width: 5%;
+                margin-top: 2%;
+                
+            }
+        }
+        img.logo{
+            margin-left: 10%;
+        }
+
+        p{
+            width: 100%;
+            text-align:center;
+            line-height: 200%;
+        }
+
+    }
+    
+}
+

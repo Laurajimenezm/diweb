@@ -1,0 +1,23 @@
+
+$colorhs:#32726c;
+
+$fondoproducto:#f0e8b7;
+
+$colorpie:rgba(39, 36, 36, 0.651);;
+
+$fondoDeportes:#eeeaeb;
+
+* {
+    box-sizing: border-box;
+}
+
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+@import "header";
+@import "mixin";
+@import "section";
+@import "sectiondos";
+@import "footer";

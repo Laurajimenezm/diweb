@@ -1,0 +1,41 @@
+
+section.escaparate{
+
+    float: left;
+    margin-top:2%;
+    width: 100%;
+
+    h1{
+       @include estiloh1;
+    }
+
+    div.producto{
+        float: left;
+        margin-left: 3%;
+        padding: 1%;
+        width: 20%;
+        margin-top:4%;
+        border: 2px solid white;
+        transition:  border 2s linear;
+
+        h3{
+            @include estiloh3;
+            &:hover{
+
+                background-color: $colorhs;
+            }
+        }
+
+        &:hover{
+            @include border-radius;
+        }
+
+        img{
+            display:block;
+            margin:auto;
+            width: 30%;
+            height: 120px;
+        }
+    }
+
+}

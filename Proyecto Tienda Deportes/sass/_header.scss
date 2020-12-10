@@ -1,0 +1,57 @@
+header {
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    float: left;
+
+    div.infoBasica{
+        width: 100%;
+        background-color: $fondoproducto;
+        height: 25px;
+        text-align: center;
+        
+    }
+
+    a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+    img {
+        width: 70%;
+        margin-top: 2em;
+        
+    }
+
+    nav {
+        float: left;
+        margin-top: 3.3em;
+        border-bottom:2px solid black;
+
+        li{
+            list-style:none;
+            float:right;
+            margin-right: 3em;
+
+            a{
+                font-size: 1.5em;
+                color:black;
+                margin-bottom: 5%;
+
+                &:hover {
+                    background-color:$fondoproducto;
+                    color:black;
+                }
+                
+            }
+            
+        }
+        
+    }
+}
+
+
+

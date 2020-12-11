@@ -16,6 +16,11 @@ $fondoDeportes:#eeeaeb;
     padding:0;  
 }
 
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background-color:white;
+}
 @import "header";
 @import "mixin";
 @import "section";

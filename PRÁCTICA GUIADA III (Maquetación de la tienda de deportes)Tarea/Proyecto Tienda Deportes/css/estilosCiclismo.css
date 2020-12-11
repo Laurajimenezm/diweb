@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+header {
+  overflow: hidden;
+  font-family: 'PT Sans', sans-serif;
+  width: 100%;
+  float: left;
+}
+
+header div.infoBasica {
+  width: 100%;
+  background-color: #f0e8b7;
+  height: 25px;
+  text-align: center;
+}
+
+header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+header img {
+  width: 70%;
+  margin-top: 2em;
+}
+
+header nav {
+  float: left;
+  margin-top: 3.3em;
+  border-bottom: 2px solid black;
+}
+
+header nav li {
+  list-style: none;
+  float: right;
+  margin-right: 3em;
+}
+
+header nav li a {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 5%;
+}
+
+header nav li a:hover {
+  background-color: #f0e8b7;
+  color: black;
+}
+
+section.escaparate {
+  float: left;
+  margin-top: 2%;
+  width: 100%;
+}
+
+section.escaparate h1 {
+  text-align: center;
+  color: #32726c;
+  font-family: 'Poppins', sans-serif;
+}
+
+section.escaparate div.producto {
+  float: left;
+  margin-left: 3%;
+  padding: 1%;
+  width: 20%;
+  margin-top: 4%;
+  border: 2px solid white;
+  transition: border 2s linear;
+}
+
+section.escaparate div.producto h3 {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: background-color 2s linear;
+  background-color: #f0e8b7;
+}
+
+section.escaparate div.producto h3:hover {
+  background-color: #32726c;
+}
+
+section.escaparate div.producto:hover {
+  border: 2px solid #6b6868;
+  border-radius: 2%;
+}
+
+section.escaparate div.producto img {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: 120px;
+}
+
+section.deportes {
+  float: left;
+  background-color: #eeeaeb;
+  margin-top: 2%;
+  width: 100%;
+  float: left;
+}
+
+section.deportes h1 {
+  text-align: center;
+  color: #32726c;
+  font-family: 'Poppins', sans-serif;
+}
+
+section.deportes article {
+  float: left;
+  width: 50%;
+  margin-top: 2%;
+}
+
+section.deportes article h2 {
+  text-align: center;
+  margin-bottom: 2%;
+  color: #32726c;
+  font-family: 'Poppins', sans-serif;
+}
+
+section.deportes article img {
+  width: 40%;
+  float: left;
+  margin-left: 2%;
+  border-radius: 4%;
+}
+
+section.deportes article h3 {
+  clear: both;
+  margin-top: 2%;
+  color: #32726c;
+  font-family: 'Poppins', sans-serif;
+}
+
+section.deportes article p {
+  width: 50%;
+  margin-left: 1%;
+  float: left;
+  text-align: justify;
+}
+
+section.deportes article iframe {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 90%;
+}
+
+footer {
+  width: 100%;
+  float: left;
+  margin-top: 15%;
+  font-family: 'PT Sans', sans-serif;
+  background-color: rgba(39, 36, 36, 0.651);
+}
+
+footer div.footer {
+  width: 31%;
+  float: left;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+footer div.footer a.media {
+  width: 100%;
+  display: block;
+  margin-top: 4%;
+  margin-left: 6%;
+}
+
+footer div.footer a.media img {
+  width: 5%;
+  margin-top: 2%;
+}
+
+footer div.footer img.logo {
+  margin-left: 10%;
+}
+
+footer div.footer p {
+  width: 100%;
+  text-align: center;
+  line-height: 200%;
+}
+/*# sourceMappingURL=estilosCiclismo.css.map */

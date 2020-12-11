@@ -1,0 +1,59 @@
+
+section.deportes{
+    float: left;
+    background-color:$fondoDeportes;
+    margin-top:2%;
+    width: 100%;
+    float: left;
+
+    h1{
+        @include estiloh1;
+    }
+    article{
+
+        float: left;
+        width: 50%;
+        margin-top: 2%;
+
+        h2{
+            text-align: center;
+            margin-bottom: 2%;
+            color:$colorhs;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        img{
+            width: 40%;
+            float: left;
+            margin-left: 2%;
+            border-radius: 4%;
+        }
+        
+        h3{
+            clear: both;
+            margin-top:2%;
+            color:$colorhs;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p{
+            width: 50%;
+            margin-left:1%;
+            float: left;
+            text-align: justify;
+        }
+
+        iframe{
+            margin-top:2%;
+            margin-bottom: 2%;
+            margin-left: 2%;
+            width: 90%;
+        }
+
+    }
+}
+
+
+
+
+

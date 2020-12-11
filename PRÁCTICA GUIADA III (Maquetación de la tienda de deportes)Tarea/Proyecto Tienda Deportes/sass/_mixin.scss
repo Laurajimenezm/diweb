@@ -1,0 +1,21 @@
+
+@mixin  border-radius {
+    
+    border: 2px solid rgb(107, 104, 104);
+    border-radius: 2%;
+}
+
+@mixin estiloh3 {
+
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: background-color 2s linear;
+    background-color: #f0e8b7;
+
+}
+
+@mixin estiloh1 {
+    text-align: center;
+    color:$colorhs;
+    font-family: 'Poppins', sans-serif;
+}

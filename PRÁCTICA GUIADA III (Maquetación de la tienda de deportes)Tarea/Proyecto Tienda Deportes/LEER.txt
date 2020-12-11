@@ -1,0 +1,4 @@
+Con el SASS he hecho los estilos que son comunes para las 3 categorias de productos.
+Se llama categoriaciclismo, pero lo he aplicado a los tres archivos html.
+El archivo deportePelota.css es el que use de guia para realizar el SASS.
+Por último he realizado cambios en el prototipo, los incluyo en el fichero pdf.

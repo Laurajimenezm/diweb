@@ -1,0 +1,40 @@
+div{
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+
+}
+
+.verdeheader{
+    background-color: green;
+	height: 100px;
+}
+.rojo{
+
+	background-color: red;
+
+}
+.rosa{
+
+	background-color: pink;
+	height: 25px;
+
+}
+.naranja{
+
+	background-color: orange;
+	height: 200px;
+
+}
+.azul{
+
+	background-color: blue;
+	height: 100px;
+
+}
+.verdefooter{
+    background-color: green;
+	height: 50px;
+
+}

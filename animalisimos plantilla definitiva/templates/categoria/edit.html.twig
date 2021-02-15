@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Categoria{% endblock %}
+
+{% block body %}
+
+{% include "navadmin/navadmin.html.twig" %}
+
+   <div class="col-7 mt-5">
+
+    <h2 class="mb-6">Edit Categoria</h2>
+
+    {{ include('categoria/_form.html.twig', {'button_label': 'Grabar'}) }}
+
+    <a href="{{ path('categoria_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+
+    {{ include('categoria/_delete_form.html.twig') }}
+
+        </div>
+    
+ </div>
+</div>
+
+{% endblock %}

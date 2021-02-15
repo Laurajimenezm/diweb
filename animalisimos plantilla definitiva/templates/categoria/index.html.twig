@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Categoria index{% endblock %}
+
+{% block body %}
+
+{% include "navadmin/navadmin.html.twig" %}
+  
+<div class="col-7 mt-5">
+    <h2 class="col-12 mb-5 titulos">Gestion de Categorias</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Gestion</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for categorium in categorias %}
+            <tr>
+                <td>{{ categorium.id }}</td>
+                <td>{{ categorium.nombre }}</td>
+                <td>{{ categorium.descripcion }}</td>
+                <td>
+                    <a href="{{ path('gatoperro_show', {'id': categoria.id}) }}"><i class="fas fa-clipboard-list"></i></a>
+                    <a href="{{ path('gatoperro_edit', {'id': categoria.id}) }}"><i class="far fa-edit"></i></a>
+                    {{ include('gatoperro/_delete_form.html.twig') }}
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">Sin Resultados</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ path('categoria_new') }}"><i class="fas fa-folder-plus"></i>Nueva Categoria</a>
+
+</div>
+    </div>
+    </div>
+{% endblock %}

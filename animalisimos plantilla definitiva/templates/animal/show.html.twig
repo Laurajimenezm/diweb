@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Animal{% endblock %}
+
+{% block body %}
+{% include "navadmin/navadmin.html.twig" %}
+<div class="col-7 mt-4">
+
+    <h2>Vista de Animal</h2>
+    <div class="row">
+    <div class="col-7 mt-2 text-left">
+    <table class="table  table-hover">
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ animal.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ animal.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Fecha_nac</th>
+                <td>{{ animal.fechaNac ? animal.fechaNac|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Recogida</th>
+                <td>{{ animal.recogida }}</td>
+            </tr>
+            <tr>
+                <th>Sexo</th>
+                <td>{{ animal.sexo }}</td>
+            </tr>
+            <tr>
+                <th>Chip</th>
+                <td>{{ animal.chip }}</td>
+            </tr>
+            <tr>
+                <th>Borrar</th>
+                <td>{{ include('animal/_delete_form.html.twig') }}</td>
+            </tr>
+            <tr>
+                <th>Editar</th>
+                <td><a href="{{ path('animal_edit', {'id': animal.id}) }}"><i class="far fa-edit"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('animal_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+
+</div>
+    </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

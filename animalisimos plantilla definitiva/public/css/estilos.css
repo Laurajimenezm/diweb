@@ -1,0 +1,53 @@
+.fondo{
+
+    background-image:url('../img/AnimalisimosCabecera.jpg');
+}
+#layoutSidenav{
+    height: 100vh;
+}
+.bg-primary{
+
+  background-color:#aa9683;
+}
+
+td i{
+  color:#aa9683;
+}
+
+a i{
+
+  color:#aa9683;
+}
+
+a{
+  color:black
+}
+a:hover{
+  color:black
+}
+
+.btn-primary{
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 0.8571em;
+  line-height: 1.35em;
+  margin: 10px 1px;
+  border: none;
+  border-radius: 0.1875rem;
+  padding: 11px 22px;
+  cursor: pointer;
+  background-color: #888888;
+  color: #FFFFFF;
+}
+
+.titulos{
+
+  background-color: #212529;
+  padding: 2%;
+  color: #FFFFFF;
+
+}
+
+.row{
+  margin-right: 0% !important;
+}

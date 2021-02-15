@@ -1,0 +1,37 @@
+
+<div class="form-group row">
+        <div class="col-10">
+
+        {{ form_start(form) }}
+            <div class="row mb-2">
+            {{ form_label(form.nombre, 'Nombre', {'label_attr': {'class': 'col-2 col-form-label'}}) }}
+            {{ form_widget(form.nombre, { 'attr': {'class': 'col-3 form-control'} }) }}
+             {{ form_errors(form.nombre) }}
+            {{ form_label(form.fecha_nac,'Nacimiento', {'label_attr': {'class': 'col-2 js-datepicker'}}) }}
+            {{ form_widget(form.fecha_nac)}}
+            {{ form_errors(form.fecha_nac)}}
+            </div>
+            <div class="row mb-2">
+            {{ form_label(form.recogida, 'Recogida', {'label_attr': {'class': 'col-2 col-form-label'}}) }}
+            {{ form_widget(form.recogida, { 'attr': {'class': 'col-3 form-control'} }) }}
+            {{ form_errors(form.recogida) }}
+            {{ form_label(form.sexo,'Sexo', {'label_attr': {'class': 'col-2 col-form-label'}}) }}
+            {{ form_widget(form.sexo, { 'attr': {'class': 'col-3 form-control'} }) }}
+            {{ form_errors(form.sexo)}}
+            </div>
+            <div class="row mb-2">
+            {{ form_label(form.chip, 'Chip', {'label_attr': {'class': 'col-2 col-form-label'}}) }}
+            {{ form_widget(form.chip, { 'attr': {'class': 'col-3 form-control'} }) }}
+            {{ form_errors(form.chip) }}
+            {{ form_label(form.usuario,'Rescatador', {'label_attr': {'class': 'col-2 col-form-label'}}) }}
+            {{ form_widget(form.usuario, { 'attr': {'class': 'col-3 form-control'} }) }}
+            </div>
+            <div class="row mb-2">
+            {{ form_label(form.raza,'Raza', {'label_attr': {'class': 'col-2 col-form-label'}}) }}
+            {{ form_widget(form.raza, { 'attr': {'class': 'col-3 form-control'} }) }}
+            </div>
+            <button class="btn-primary ">{{ button_label|default('Guardar') }}</button>
+        </div>
+        {{ form_end(form) }}
+</div>
+

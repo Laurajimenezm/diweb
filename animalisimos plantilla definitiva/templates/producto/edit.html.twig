@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Producto{% endblock %}
+
+{% block body %}
+
+  {% include "navadmin/navadmin.html.twig" %}
+
+    <div class="col-7 mt-5">
+
+    <h2  class="mb-6">Editar Producto</h2>
+
+    {{ include('producto/_form.html.twig', {'button_label': 'Grabar'}) }}
+
+    <a href="{{ path('producto_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+
+    </div>
+    
+ </div>
+</div>
+
+{% endblock %}

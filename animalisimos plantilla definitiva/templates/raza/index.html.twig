@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Raza index{% endblock %}
+
+{% block body %}
+{% include "navadmin/navadmin.html.twig" %}
+
+  <div class="col-7 mt-5">
+    <h2>Gestión de Razas</h2>
+
+       <table class="table table-hover">
+        <thead class="bg-primary">
+            <tr class="color">
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Ver</th>
+                <th>Editar</th>
+                <th>Crear nuevo</th>
+                <th>Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for raza in razas %}
+            <tr>
+                <td>{{ raza.id }}</td>
+                <td>{{ raza.nombre }}</td>
+                <td><a href="{{ path('raza_show', {'id': raza.id}) }}"><i class="fas fa-clipboard-list"></i></a></td>
+                <td><a href="{{ path('raza_edit', {'id': raza.id}) }}"><i class="far fa-edit"></i></a></td>
+                <td><a href="{{ path('raza_new') }}"><i class="fas fa-folder-plus"></i></a></td>
+                <td>{{ include('raza/_delete_form.html.twig') }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">Sin Resultados</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+  
+    </div>
+    </div>
+    </div>
+{% endblock %}
+{% block footer %}
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Producto{% endblock %}
+
+{% block body %}
+    {% include "navadmin/navadmin.html.twig" %}
+
+<div class="col-6 mt-5">
+    <h2 class="col-12">Crear nuevo Producto</h2>
+
+    {{ include('producto/_form.html.twig') }}
+
+     <a href="{{ path('producto_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+</div>
+    </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

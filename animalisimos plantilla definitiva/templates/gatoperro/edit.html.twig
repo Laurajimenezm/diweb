@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Gatoperro{% endblock %}
+
+{% block body %}
+
+    {% include "navadmin/navadmin.html.twig" %}
+
+    <div class="col-7 mt-5">
+
+        <h2 class="mb-6  titulos">Editar tipo de Animal</h2>
+
+
+        {{ include('gatoperro/_form.html.twig', {'button_label': 'Grabar'}) }}
+
+        <a href="{{ path('gatoperro_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+
+    </div>
+    
+ </div>
+</div>
+
+    
+{% endblock %}
+
+
+   

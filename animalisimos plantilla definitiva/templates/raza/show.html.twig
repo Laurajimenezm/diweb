@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Raza{% endblock %}
+
+{% block body %}
+
+{% include "navadmin/navadmin.html.twig" %}
+
+<div class="col-7 mt-4">
+    <h1>Tipo de Raza</h1>
+
+    <div class="row">
+    <div class="col-7 mt-2 text-left">
+    <table class="table  table-hover">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ raza.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ raza.nombre }}</td>
+            </tr>
+             <tr>
+                <th>Borrar</th>
+                <td>{{ include('raza/_delete_form.html.twig') }}</td>
+            </tr>
+            <tr>
+                <th>Editar</th>
+                <td><a href="{{ path('raza_edit', {'id': gatoperro.id}) }}"><i class="far fa-edit"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('raza_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+
+    
+
+    </div>
+    </div>
+    </div>
+{% endblock %}
+{% block footer %}
+
+{% endblock %}

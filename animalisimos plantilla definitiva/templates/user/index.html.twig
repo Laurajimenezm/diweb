@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User index{% endblock %}
+
+{% block body %}
+
+    {% include "navadmin/navadmin.html.twig" %}
+
+    <div class="col-9 mt-5">
+
+    <h2>Gestion de Usuarios</h2>
+
+    <table class="table table-hover">
+        <thead class="bg-primary">
+            <tr class="color">
+                
+                <th>Username</th>
+                <th>Roles</th>
+                <th>Dni</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Telefono</th>
+                <th>Email</th>
+                <th>Gestión</th>
+                <th>Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.username }}</td>
+                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+                <td>{{ user.dni }}</td>
+                <td>{{ user.nombre }}</td>
+                <td>{{ user.apellido1 }} {{ user.apellido2 }}</td>
+                <td>{{ user.telefono }}</td>
+                <td>{{ user.email }}</td>
+                <td>
+                    <a href="{{ path('user_show', {'id': user.id}) }}"><i class="fas fa-clipboard-list"></i></a>
+                    <a href="{{ path('user_edit', {'id': user.id}) }}"><i class="far fa-edit"></i></a>
+                </td>
+                <td>{{ include('user/_delete_form.html.twig') }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <td><a href="{{ path('user_new') }}"><i class="fas fa-folder-plus"></i>Crear Usuario</a></td>
+</div>
+</div>
+</div>
+    
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

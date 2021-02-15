@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ parent()}}
+
+  {% if is_granted('ROLE_ADMIN') %}
+      {% include "navadmin/body.html.twig" %}
+  {% elseif is_granted('ROLE_USER') %}
+      {% include "inicio/bodyuser.html.twig" %}
+  {% else %}
+      {% include "inicio/bodyuser.html.twig" %}
+  {% endif %}
+
+  {% block footer %}
+  {% endblock %}
+
+{% endblock %}
+

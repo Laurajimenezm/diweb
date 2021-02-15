@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nueva Raza{% endblock %}
+
+{% block body %}
+{% include "navadmin/navadmin.html.twig" %}
+  <div class="col-7 mt-5">
+    <h2>Create new Raza</h2>
+
+    {{ include('raza/_form.html.twig') }}
+
+    <a href="{{ path('raza_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+    </div>
+    </div>
+    </div>
+{% endblock %}
+{% block footer %}
+
+{% endblock %}

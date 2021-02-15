@@ -1,0 +1,18 @@
+<div class="form-group row">
+        {{ form_start(form) }}
+       
+        <div class="col-12">
+            <div class="row error">
+                {{ form_errors(form.nombre,{ 'attr': {'class': 'col-5 form-control'} }) }}
+            </div>
+            <div class="row">
+            {{ form_label(form.nombre, 'Nombre', {'label_attr': {'class': 'col-5 col-form-label'}}) }}
+            {{ form_widget(form.nombre, { 'attr': {'class': 'col-6 form-control'} }) }}
+            
+            </div>
+            <button class="btn-primary">{{ button_label|default('Guardar') }}</button>
+        </div>
+        
+        {{ form_end(form) }}
+</div>
+

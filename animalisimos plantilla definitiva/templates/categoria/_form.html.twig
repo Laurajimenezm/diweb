@@ -1,0 +1,15 @@
+{{ form_start(form) }}
+     <div class="col-12">
+            <div class="row">
+            {{ form_label(form.nombre, 'Nombre', {'label_attr': {'class': 'col-2 mb-1 col-form-label'}}) }}
+            {{ form_widget(form.nombre, { 'attr': {'class': 'col-3 mb-1 form-control'} }) }}
+            {{ form_errors(form.nombre,{ 'attr': {'class': 'col-5 mb-1 form-control'} }) }}
+            </div>
+             <div class="row">
+            {{ form_label(form.descripcion, 'Descripcion', {'label_attr': {'class': 'col-2 mb-1 col-form-label'}}) }}
+            {{ form_widget(form.descripcion, { 'attr': {'class': 'col-4 mb-1 form-control'} }) }}
+            {{ form_errors(form.descripcion,{ 'attr': {'class': 'col-5 mb-1 form-control'} }) }}
+            </div>
+            <button class="btn-primary">{{ button_label|default('Guardar') }}</button>
+        </div>
+{{ form_end(form) }}

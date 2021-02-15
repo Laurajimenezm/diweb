@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestión de Animales{% endblock %}
+
+{% block body %}
+
+{{ parent()}}
+
+<div class="col-8 mt-5">
+    <div class="row">
+    <h2 class="col-12 mb-5 titulos">Gestión de Animales</h2>
+
+    <table class="table table-hover col-12">
+        <thead class="bg-primary">
+            <tr class="color">
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Nacimiento</th>
+                <th>Recogida</th>
+                <th>Sexo</th>
+                <th>Chip</th>
+                <th>Raza</th>
+                <th>Gestión</th>
+                <th>Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for animal in animals %}
+            <tr>
+                <td>{{ animal.id }}</td>
+                <td>{{ animal.nombre }}</td>
+                <td>{{ animal.fechaNac ? animal.fechaNac|date('Y-m-d') : '' }}</td>
+                <td>{{ animal.recogida }}</td>
+                <td>{{ animal.sexo }}</td>
+                <td>{{ animal.chip }}</td>
+                <td>{{ animal.raza }}</td>
+                <td>
+                    <a href="{{ path('animal_show', {'id': animal.id}) }}"><i class="fas fa-clipboard-list"></i></a>
+                    <a href="{{ path('animal_edit', {'id': animal.id}) }}"><i class="far fa-edit"></i></a>
+                    <a href="{{ path('animal_new') }}"><i class="fas fa-folder-plus"></i></a>            
+                </td>
+                <td>{{ include('animal/_delete_form.html.twig') }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}
+{% block footer %}
+
+{% endblock %}

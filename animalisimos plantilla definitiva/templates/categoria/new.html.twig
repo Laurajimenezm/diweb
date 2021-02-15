@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nueva Categoria{% endblock %}
+
+{% block body %}
+    {% include "navadmin/navadmin.html.twig" %}
+
+<div class="col-7 mt-5">
+    <h1>Crear nueva Categoria</h1>
+
+    {{ include('categoria/_form.html.twig') }}
+
+    <a href="{{ path('categoria_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+</div>
+    </div>
+    </div>
+{% endblock %}

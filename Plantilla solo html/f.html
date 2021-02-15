@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;
+  		transform:rotate(0deg);
+        background: orange;
+        }
+        
+  25%{transform:rotate(30deg);
+  	left:200px;
+    background: red;
+   
+  }
+  
+  50%{transform:rotate(60deg);
+  	left:400px;
+    background: red;
+    
+  }
+  
+  70% {
+  left:600px;
+  	transform:rotate(360deg);
+    background: red;
+    
+  
+  } /* ignored */
+ 
+  
+  to {left: 0px;
+  	transform:rotate(0deg);
+     background: orange;
+    
+   }
+}
+</style>
+</head>
+<body>
+
+<h1>The @keyframes Rule</h1>
+
+<p>The !important rule is ignored in a keyframe. Try to remove it, and see the result.</p>
+
+<p><strong>Note:</strong> The @keyframes rule is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<div>KEYFRAME</div>
+
+</body>
+</html>

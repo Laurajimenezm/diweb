@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nuevo Tipo de animal{% endblock %}
+
+{% block body %}
+
+{% include "navadmin/navadmin.html.twig" %}
+
+<div class="col-7 mt-5">
+    <h2>Crear nuevo Tipo Animal</h2>
+
+    {{ include('gatoperro/_form.html.twig') }}
+
+    <a href="{{ path('gatoperro_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+
+</div>
+    </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

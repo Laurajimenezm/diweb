@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestion Productos{% endblock %}
+
+{% block body %}
+
+ {% include "navadmin/navadmin.html.twig" %}
+
+  <div class="col-7 mt-5">
+    <h2>Gestion de Productos</h2>
+
+     <table class="table table-hover">
+        <thead class="bg-primary">
+            <tr class="color">
+                <th>Id</th>
+                <th>Decripcion</th>
+                <th>Nombre</th>
+                <th>Stock</th>
+                <th>Precio</th>
+                <th>Editar</th>
+                <th>Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for producto in productos %}
+            <tr>
+                <td>{{ producto.id }}</td>
+                <td>{{ producto.decripcion }}</td>
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.stock }}</td>
+                <td>{{ producto.precio }}</td>
+                <td><a href="{{ path('producto_show', {'id': producto.id}) }}"><i class="fas fa-clipboard-list"></i></a></td>
+                <td><a href="{{ path('producto_edit', {'id': producto.id}) }}"><i class="far fa-edit"></i></a></td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">Sin Resultados</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('producto_new') }}"><i class="fas fa-folder-plus"></i>Nuevo Producto</a>
+
+</div>
+    </div>
+    </div>
+    
+{% endblock %}

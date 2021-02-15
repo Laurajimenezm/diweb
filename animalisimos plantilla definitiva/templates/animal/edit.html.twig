@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editar Animal{% endblock %}
+
+{% block body %}
+
+{{ parent()}}
+
+<div class="col-8 mt-2">
+    <h2 class="mt-2">Editar Animales</h2>
+
+    {{ include('animal/_form.html.twig', {'button_label': 'Grabar'}) }}
+
+    <a href="{{ path('animal_index') }}"><i class="fas fa-arrow-alt-circle-left"></i>Volver a Lista</a>
+</div>
+
+</div>
+</div>
+{% endblock %}
+{% block footer %}
+
+{% endblock %}

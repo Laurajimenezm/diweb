@@ -1,5 +1,12 @@
-div {
-  width: 100px;
+div{
+    width: 1000px;
+    margin-top: 50px;
+    height: auto;
+    border:1px solid black;
+    padding: 1%;
+}
+h1 {
+  width: 180px;
   height: 30px;
   border-radius: 10%;
   margin-top: 50px;
